@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker {
+        aws-docker-jenkins-inbound-agent {
             label 'ssh-agent'
             image 'python:3'
     }   }
