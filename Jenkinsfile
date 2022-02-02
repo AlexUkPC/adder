@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            label 'docker'
+            label 'ssh-agent'
             image 'python:3'
       }   
     }
