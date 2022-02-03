@@ -4,6 +4,10 @@ pipeline {
             label 'ssh'
       }   
     }
+    parameters {
+        string(name: 'REF', defaultValue: 
+    '\${ghprbActualCommit}', description: 'Commit to build')
+    }
     stages {
         stage('Compile') {
             steps {
@@ -25,7 +29,7 @@ pipeline {
         }   
         stage('Hello GitHub') {
             steps {
-                echo "Hello GitHub!"
+                echo "Hello GitHub!  "
             }   
         }
     }
