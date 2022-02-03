@@ -2,7 +2,6 @@ pipeline {
     agent {
         docker {
             label 'docker-cloud'
-            image 'python:3'
       }   
     }
     stages {
