@@ -28,7 +28,7 @@ pipeline {
         }   
         stage('Hello GitHub') {
             steps {
-                echo "Hello GitHub!3"
+                echo "Hello GitHub! Postmerge test"
             }   
         }
     }
