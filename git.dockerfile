@@ -4,4 +4,4 @@ RUN apt-get -qq update -y && apt-get -qq install -y git \
 RUN adduser --disabled-password --gecos "" \
     --uid 1000 --shell /bin/bash jenkins
 RUN git config --system user.email alexrogna@yahoo.com
-RUN git config --system user.name "AlexUkPc"
+RUN git config --system user.name "AlexUkPC"
